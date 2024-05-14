@@ -123,68 +123,131 @@ export class MyElement extends LitElement {
 
   render() {
     return html`
-      <div>
+      <div id="main">
+        <div  class="first-title">
+          <h1>${this.title}</h1> 
+          <p>${this.paragraph1}</p>
+        </div>
+        <div class="star-img-container">
+        <img class="force-user-img" src="${this.image1URL}">
+        </div>    
+        
+        <h1 class="second-title">${this.paragraph2}</h1>
+
+        <div class="blue-saber">
+          <h1>${this.title2}</h1> 
+          <p>${this.paragraph3}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image2URL}">
+          </div>
       
-      <h1>${this.title}</h1> 
-      <p>${this.paragraph1}</p>
-      <img src="${this.image1URL}">
+          <h1>${this.title3}</h1> 
+          <p>${this.paragraph4}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image3URL}">
+          </div>
+        </div>
 
-      <h1>${this.paragraph2}</h1>
+        <div class="green-saber">
+          <h1>${this.title4}</h1> 
+          <p>${this.paragraph5}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image4URL}">
+          </div>
+        </div>
 
-      <h1>${this.title2}</h1> 
-      <p>${this.paragraph3}</p>
-      <img src="${this.image2URL}">
+        <div class="purp-saber">
+          <h1>${this.title5}</h1> 
+          <p>${this.paragraph6}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image5URL}">
+          </div>
+        </div>
 
-      <h1>${this.title3}</h1> 
-      <p>${this.paragraph4}</p>
-      <img src="${this.image3URL}">
-      
-      <h1>${this.title4}</h1> 
-      <p>${this.paragraph5}</p>
-      <img src="${this.image4URL}">
-      
-      <h1>${this.title5}</h1> 
-      <p>${this.paragraph6}</p>
-      <img src="${this.image5URL}">
+        <div class="green-saber">
+          <h1>${this.title6}</h1> 
+          <p>${this.paragraph7}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image6URL}">
+          </div>
+        </div>
 
-      
-      <h1>${this.title6}</h1> 
-      <p>${this.paragraph7}</p>
-      <img src="${this.image6URL}">
+        <div class="sith">
+          <h1>${this.title11}</h1>
 
-      <h1>${this.title11}</h1>
+          <h1>${this.title7}</h1> 
+          <p>${this.paragraph8}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image7URL}">
+          </div>
 
-      <h1>${this.title7}</h1> 
-      <p>${this.paragraph8}</p>
-      <img src="${this.image7URL}">
+          <h1>${this.title8}</h1> 
+          <p>${this.paragraph9}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image8URL}">
+          </div>
 
-      <h1>${this.title8}</h1> 
-      <p>${this.paragraph9}</p>
-      <img src="${this.image8URL}">
-
-      <h1>${this.title9}</h1> 
-      <p>${this.paragraph10}</p>
-      <img src="${this.image9URL}">
-
+          <h1>${this.title9}</h1> 
+          <p>${this.paragraph10}</p>
+          <div class="star-img-container">
+            <img class="force-user-img" src="${this.image9URL}">
+          </div>
+        </div>
 
       
       </div>
     `
   }
 
-  
+
   static get styles() {
     return css`
-      :host {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 2rem;
-        text-align: center;
+  
+
+      #main{
+        background-color:#40434b
       }
+
+      .force-user-img{
+        width: 25vw;
+    }
+    
+    .star-img-container{
+      text-align:center;
+    }
+
+    .first-title{
+      color:yellow
       
-      body{
-        background-color: black    ;
-      }
+    }
+    .first-title{
+      text-align:center
+    }
+
+    .second-title{
+      color:blue
+    }
+    .second-title{
+      text-align:center
+    }
+
+    .blue-saber{
+      color:#345cca
+    }
+
+    .green-saber{
+      color:green
+    }
+
+    .purp-saber{
+      color:purple
+    }
+
+    .sith{
+      color:red
+    }
+
+
     `
 
   }
